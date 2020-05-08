@@ -86,7 +86,7 @@
           }
 
           _onRequestOK(event) {
-            const data = event.detail.data.map(this._cleanObject);            
+            const data = event.detail.data.map(this._cleanObject);     
             this._eventDispatcher('page-list-event', data);
           }
 
