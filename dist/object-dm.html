@@ -1,5 +1,5 @@
-<link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="../bower_components/data-provider/dist/cells-generic-dp.html">
+<link rel="import" href="../../polymer/polymer-element.html">
+<link rel="import" href="../../data-provider/dist/cells-generic-dp.html">
 
 <dom-module id="object-dm">
   <template>    
@@ -10,7 +10,8 @@
         method="[[method]]"
         path="[[path]]"     
         on-request-error="_onRequestError"
-        on-request-success="_onRequestOK"></cells-generic-dp> 
+        on-request-success="_onRequestOK">        
+  </cells-generic-dp> 
   </template>  
   <script>
     class ObjectDM  extends Polymer.Element{
@@ -86,8 +87,7 @@
             }));
           }
 
-          _onRequestOK(event) {
-            console.log(event.detail.data)
+          _onRequestOK(event) {            
             const data = event.detail.data.map(this._cleanObject);     
             this._eventDispatcher('page-list-event', data);
           }
