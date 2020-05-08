@@ -2,7 +2,11 @@
   "name": "data-provider",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "data-provider": "https://github.com/josecarlosdxu/polymer-data-provider.git"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "data-provider": "https://github.com/josecarlosdxu/polymer-data-provider.git"
+  }
 }
